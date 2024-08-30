@@ -1,0 +1,1 @@
+INSERT INTO tbl_transaksi_hadir (tanggal_transaksi, id_siswa, id_staff, status, keterangan, waktu_presensi) VALUES (CURDATE(), '346', 'BT', 'I', '', NOW()) ON DUPLICATE KEY UPDATE status='I', keterangan='', waktu_presensi=NOW()
